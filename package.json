@@ -4,11 +4,15 @@
   "description": "A coding challenge to assess your ability to navigate an express server implementation.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "init-db": "node scripts/create-db.js; node scripts/populate-db.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "sequelize": "^4.42.0",
+    "sqlite3": "^4.0.6"
   }
 }

@@ -3,6 +3,12 @@ const app = express();
 
 const index = require('./routes/index.js');
 
-app.get('/', index);
+function stub(req, res) {
+  return res.send(`${req.url} not implemented`);
+}
+
+app.get('/', index)
+app.get('/books', stub)
+app.post('/users/lti', stub);
 
 app.listen(3000, () => console.log(`Open http://localhost:3000 to see a response.`));

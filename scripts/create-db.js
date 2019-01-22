@@ -1,4 +1,4 @@
-// no need to edit this file for the challenge; it is run as part of `npm run init-db`
+// This script is run as part of `npm run init-db`
 
 const models = require('../models/index.js')('sqlite3.db');
 
@@ -10,6 +10,7 @@ const models = require('../models/index.js')('sqlite3.db');
       models.Book.sync(),
       models.User.sync(),
       models.LTIConsumer.sync(),
+      // TODO: add more models to be sync'd if required
     ])
     process.exit(0)
   } catch (error) {

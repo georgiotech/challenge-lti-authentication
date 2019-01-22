@@ -1,4 +1,5 @@
-// no need to edit this file for the challenge; it is run as part of `npm run init-db`
+// This script is run as part of `npm run init-db`.
+// Please do not change this script - it takes care of populating Books and Institutions with minimal data
 
 const models = require('../models/index.js')('sqlite3.db');
 
